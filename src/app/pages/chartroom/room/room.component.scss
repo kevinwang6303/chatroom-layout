@@ -1,0 +1,73 @@
+.room {
+  background: #eee;
+  .header {
+    padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    .img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .header-icon {
+      margin-left: 1em;
+    }
+  }
+  .chart-room {
+    padding-top: 1em;
+    height: calc(100vh - 170px);
+    background-image: url(/assets/images/bg.png);
+    background-color: #e5ddd5;
+    overflow-y: auto;
+    .message {
+      margin: 1em 0;
+      &.message-date {
+        .text {
+          background: #e1f3fb;
+          padding: .3em;
+          border-radius: 5px;
+        }
+      }
+      &.message-other-side {
+        .text {
+          background: #ffffff;
+          padding: .3em;
+          border-radius: 5px;
+          max-width: 10em;
+          margin-left: 5em;
+        }
+      }
+      &.message-me {
+        .text {
+          background: #dcf8c6;
+          padding: .3em;
+          border-radius: 5px;
+          max-width: 10em;
+          margin-right: 5em;
+        }
+      }
+    }
+  }
+  .footer {
+    background: #f5f1ee;
+    padding: .6em;
+    .margin-left-1em {
+      margin-left: 1em;
+    }
+    .text {
+      width: 70%;
+      border: 0;
+      border-radius: 5px;
+      line-height: 30px;
+      background: white;
+      outline: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .room {
+    .chart-room {
+      height: calc(100vh - 130px);
+    }
+  }
+}

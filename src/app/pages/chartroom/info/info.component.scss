@@ -1,0 +1,46 @@
+.info {
+  background: #eee;
+  .header {
+    padding: 10px;
+    .img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .header-icon {
+      margin-left: 1em;
+    }
+  }
+  .search-block {
+    padding: 5px;
+    background: white;
+    .search-text {
+      outline: 0;
+      box-sizing: border-box;
+      width: 80%;
+      background: transparent;
+      border: 0;
+    }
+  }
+  .nav-list-scroll {
+    overflow-y: auto;
+    height: calc(100vh - 145px);
+    background: white;
+    .content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .chartroom {
+    margin: 0 auto;
+  }
+  .info {
+    .nav-list-scroll {
+      height: calc(100vh - 105px);
+    }
+  }
+}

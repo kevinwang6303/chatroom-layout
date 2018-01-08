@@ -1,0 +1,27 @@
+<div class="info" fxLayout="column">
+  <header class="header" fxLayout="row" fxLayoutAlign="space-between center">
+    <img class="img" matListAvatar src="/assets/images/evan.jpg" />
+    <div>
+      <mat-icon matTooltip="更新內容">cached</mat-icon>
+      <mat-icon matTooltip="新增對話" class="header-icon">chat</mat-icon>
+      <mat-icon matTooltip="更多" class="header-icon">more_vert</mat-icon>
+    </div>
+  </header>
+  <mat-divider></mat-divider>
+  <div class="search-block" fxLayout="row" fxLayoutAlign="space-around">
+    <mat-icon>search</mat-icon>
+    <input class="search-text" type="text" [(ngModel)]="search">
+    <mat-icon [class.visibility-hidden]="!search">close</mat-icon>
+  </div>
+  <mat-divider></mat-divider>
+  <mat-nav-list class="nav-list-scroll">
+    <mat-list-item *ngFor="let item of data">
+      <img matListAvatar src="/assets/images/alan.png" />
+      <p matLine>Alan</p>
+      <p class="content" matLine>這是聊天室這是聊天室這是聊天室這是聊天室這是聊天室這是聊天室這是聊天室這是聊天室</p>
+      <p>2018/01/08</p>
+
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-nav-list>
+</div>

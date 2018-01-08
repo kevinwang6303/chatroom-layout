@@ -1,0 +1,22 @@
+.chartroom {
+  width: 1396px;
+  background: #f7f9fa;
+  margin: 20px auto;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  .info {
+    display: block;
+    width: 30%;
+  }
+  .room {
+    display: block;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .chartroom {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
